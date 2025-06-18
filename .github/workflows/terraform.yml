@@ -45,5 +45,5 @@ jobs:
         if [[ "${{ inputs.action }}" == "apply" ]]; then
           terraform apply -auto-approve
         else
-          terraform deploy -auto-approve
+          terraform destroy -auto-approve
         fi
